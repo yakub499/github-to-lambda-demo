@@ -2,7 +2,11 @@ pipeline{
   agent none
   stages{
     stage("Build"){
-      sh "python lambda_function.py"
+      steps{
+        step{
+          sh "python lambda_function.py"
+        }
+      }    
     }
   }
 }
