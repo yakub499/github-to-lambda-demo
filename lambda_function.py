@@ -1,3 +1,5 @@
 #!/usr/bin/env python3
+import os
 
-print('Hello World!')
+name = os.getenv("name")
+print('Hello World!'+ name)
