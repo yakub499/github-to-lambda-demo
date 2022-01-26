@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage("Build"){
       steps{
-        sh "python3 lambda_function.py"
+        sh "python github-to-lambda-demo/lambda_function.py"
       }    
     }
   }
